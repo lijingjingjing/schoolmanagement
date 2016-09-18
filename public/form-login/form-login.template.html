@@ -1,0 +1,23 @@
+<h1>Welcome to school management system</h1>
+
+<div class="alert alert-danger" ng-if="displayError">Sorry, login failed.</div>
+
+<form ng-submit="submit()">
+    <div class="form-group">
+        <label for="inputName">Name</label>
+        <input type="text" class="form-control" id="inputName" placeholder="Name" required ng-model="name">
+    </div>
+    <div class="form-group">
+        <label for="inputPassword">Password</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password" required
+               ng-model="password">
+    </div>
+    <label>
+        <input type="radio" ng-model="type" value="student">Student
+    </label>
+    <label>
+        <input type="radio" ng-model="type" value="teacher">Teacher
+    </label>
+
+    <button type="submit" class="btn btn-default">Log in</button>
+</form>

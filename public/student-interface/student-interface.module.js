@@ -1,0 +1,1 @@
+var studentInterface = angular.module('studentInterface',[]);
